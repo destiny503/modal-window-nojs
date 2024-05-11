@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: #1b1b1b;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-btn {
+  width: 600px;
+  height: 100px;
+  background-color: #c5c5c5;
+  font-size: 36px;
+}
+
+.main-btn:hover {
+  border: 5px #cecece solid;
+  animation: hovered 1s infinite alternate ease-out;
+}
+
+@keyframes hovered {
+  from {
+    box-shadow: 0 0 0px 0px #d56ae6;
+    color: #000000;
+  }
+  to {
+    box-shadow: 0 0 100px 2px #d56ae6;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff;
+  }
+}
+
+@keyframes clicked {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(3000px, -3000px);
+  }
+}
+
+.rocket {
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  font-size: 48px;
+  animation: clicked 10s;
+}
+
+#popup {
+  background-color: #ff8eff;
+  width: 650px;
+  height: 650px;
+  border: none;
+  box-shadow: 0 0 50px 5px #d56ae6;
+  position: relative;
+}
+
+.popup__inner {
+  font-size: 36px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 98%;
+}
+
+.popup__button {
+  margin-top: 100px;
+  width: 300px;
+  height: 80px;
+  font-size: 24px;
+}
