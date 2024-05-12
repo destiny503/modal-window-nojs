@@ -50,7 +50,7 @@ body {
   left: 1px;
   bottom: 1px;
   font-size: 48px;
-  animation: clicked 10s;
+  animation: clicked 10s forwards;
 }
 
 #popup {
